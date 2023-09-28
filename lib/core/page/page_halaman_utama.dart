@@ -28,6 +28,19 @@ class PageHalamanUtama extends StatefulWidget {
 class _PageHalamanUtamaState extends State<PageHalamanUtama> {
   int selectedIndex = 0;
   final controller = Get.put(ControllerHalamanUtama());
+  late List<Data> listDataJuz;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    ControllerHalamanUtama.fetchDataJuz().then((juzData) {
+      // Set your controller's value here
+      controller.listJuz.value = juzData;
+    }).catchError((error) {
+      // Handle the error here
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -226,6 +239,7 @@ class _PageHalamanUtamaState extends State<PageHalamanUtama> {
                           return Text("Error: ${snapshot.error}");
                         } else {
                           Juz juzData = snapshot.data!;
+                          controller.listJuz.value.data = juzData.data;
                           List<Data>? listData = controller.listJuz.value.data;
                           return ListView.builder(
                             shrinkWrap: true,
