@@ -1,4 +1,4 @@
-Of course! Here's an updated version of your `README.md` with the additional details:
+
 
 ---
 
