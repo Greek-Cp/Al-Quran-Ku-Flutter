@@ -45,13 +45,13 @@ _Made with Flutter and ❤️. Don't forget to give this repository a ⭐!_
 # Example commands for usage
 ```
 
-## Screenshots
+## Features
 
-| Reading View  | Short Prayers  |
-| ------------- | -------------  |
-| ![Reading View](![phone 2](https://github.com/Greek-Cp/Al-Quran-Ku-Flutter/assets/82995911/b41e361a-e099-4dc8-8fc4-3ee8cfbe4c52)
-)  | ![Short Prayers](![phone 2](https://github.com/Greek-Cp/Al-Quran-Ku-Flutter/assets/82995911/7fbddcea-7130-4f5c-bf0d-c7f09fe3790f)
-)  |
+| Feature        | Screenshot   |
+| -------------- | ------------ |
+| Reading View   | ![Reading View](https://github.com/Greek-Cp/Al-Quran-Ku-Flutter/blob/main/assets/82995911/b41e361a-e099-4dc8-8fc4-3ee8cfbe4c52.jpg)  |
+| Short Prayers  | ![Short Prayers](https://github.com/Greek-Cp/Al-Quran-Ku-Flutter/blob/main/assets/82995911/7fbddcea-7130-4f5c-bf0d-c7f09fe379
+
 
 
 ## Contributing
