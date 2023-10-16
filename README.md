@@ -49,8 +49,8 @@ _Made with Flutter and ❤️. Don't forget to give this repository a ⭐!_
 
 | Feature        | Screenshot   |
 | -------------- | ------------ |
-| Reading View   | ![Reading View](https://github.com/Greek-Cp/Al-Quran-Ku-Flutter/blob/main/assets/82995911/b41e361a-e099-4dc8-8fc4-3ee8cfbe4c52)  |
-| Short Prayers  | ![Short Prayers](https://github.com/Greek-Cp/Al-Quran-Ku-Flutter/blob/main/assets/82995911/7fbddcea-7130-4f5c-bf0d-c7f09fe379)
+| Reading View   | ![Reading View]![phone 2](https://github.com/Greek-Cp/Al-Quran-Ku-Flutter/assets/82995911/da682fda-3d06-48c5-9233-d2b9f99c133e)|
+| Short Prayers  | ![Short Prayers]![phone](https://github.com/Greek-Cp/Al-Quran-Ku-Flutter/assets/82995911/eeb98468-925d-4c31-96d2-d5968d0d7f05)|
 
 
 
