@@ -4,7 +4,8 @@
 
 # Al-Quran Ku 📖🕌
 
-![Al-Quran Ku Logo](path/to/your/logo.png)
+![oimg](https://github.com/Greek-Cp/Al-Quran-Ku-Flutter/assets/82995911/55689766-0369-4a3e-990c-35b31db75c51)
+
 
 > A complete Al-Quran application with reading features, short prayers, and a selection of six Qari. Available in Bahasa Indonesia and supports multiplatform including Windows, Web, Android, iOS, and Darwin. Designed to be fully responsive.
 
@@ -28,7 +29,7 @@ _Made with Flutter and ❤️. Don't forget to give this repository a ⭐!_
 - **Responsive Design**: Adapts to any screen size.
 - **Language**: Available in Bahasa Indonesia.
 
-![Feature Screenshot](path/to/your/feature-screenshot.png)
+![Instagram post - 1](https://github.com/Greek-Cp/Al-Quran-Ku-Flutter/assets/82995911/b107ae40-3835-4a8b-8860-9613dbc1863c)
 
 ## Installation
 
@@ -48,7 +49,10 @@ _Made with Flutter and ❤️. Don't forget to give this repository a ⭐!_
 
 | Reading View  | Short Prayers  |
 | ------------- | -------------  |
-| ![Reading View](path/to/your/reading-view.png)  | ![Short Prayers](path/to/your/short-prayers.png)  |
+| ![Reading View](![phone 2](https://github.com/Greek-Cp/Al-Quran-Ku-Flutter/assets/82995911/b41e361a-e099-4dc8-8fc4-3ee8cfbe4c52)
+)  | ![Short Prayers](![phone 2](https://github.com/Greek-Cp/Al-Quran-Ku-Flutter/assets/82995911/7fbddcea-7130-4f5c-bf0d-c7f09fe3790f)
+)  |
+
 
 ## Contributing
 
