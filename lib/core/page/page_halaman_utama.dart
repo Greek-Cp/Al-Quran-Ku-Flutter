@@ -120,6 +120,7 @@ class _PageHalamanUtamaState extends State<PageHalamanUtama> {
                   Obx(() {
                     return Card(
                       elevation: 5,
+
                       child: controller.nomorSurah.value == ""
                           ? Container(
                               child: Padding(
