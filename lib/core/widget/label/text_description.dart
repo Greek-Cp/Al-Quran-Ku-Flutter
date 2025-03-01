@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ComponentTextDescription extends StatelessWidget {
   String? textContent;
@@ -34,7 +33,7 @@ class ComponentTextDescription extends StatelessWidget {
     return Text(
       "$textDesc",
       style: GoogleFonts.poppins(
-          fontSize: fontSize.sp, fontWeight: fontWeight, color: teksColor),
+          fontSize: fontSize, fontWeight: fontWeight, color: teksColor),
       textAlign: textAlign,
       overflow: TextOverflow.ellipsis,
       maxLines: maxLines,

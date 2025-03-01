@@ -3,7 +3,6 @@ import 'package:alquran_ku/res/colors/list_color.dart';
 import 'package:alquran_ku/res/dimension/size.dart';
 import 'package:alquran_ku/core/widget/label/text_description.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 
@@ -52,7 +51,7 @@ class _PageHalamanSplashScreenState extends State<PageHalamanSplashScreen> {
               SafeArea(
                 child: ComponentTextDescription(
                   "Al-Quran",
-                  fontSize: size.sizeTextHeaderGlobal.sp,
+                  fontSize: size.sizeTextHeaderGlobal,
                   fontWeight: FontWeight.bold,
                   teksColor: ListColor.warnaTeksPutihGlobal,
                 ),
@@ -60,15 +59,15 @@ class _PageHalamanSplashScreenState extends State<PageHalamanSplashScreen> {
               SvgPicture.asset(
                 "assets/icon/ic_kaligrafi.svg",
                 fit: BoxFit.cover,
-                width: 300.w,
-                height: 100.h,
+                width: 300,
+                height: 100,
               ),
               SizedBox(
-                height: 20.h,
+                height: 20,
               ),
               ComponentTextDescription(
                 "Baca Al-Quran Dengan Mudah",
-                fontSize: size.sizeTextDescriptionGlobal.sp,
+                fontSize: size.sizeTextDescriptionGlobal,
                 fontWeight: FontWeight.bold,
                 teksColor: ListColor.warnaTeksPutihGlobal,
               )

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
 class ButtonBack extends StatelessWidget {
@@ -16,14 +15,14 @@ class ButtonBack extends StatelessWidget {
           ? Image.asset(
               "assets/icon/ic_back.png",
               fit: BoxFit.cover,
-              width: 30.w,
-              height: 30.h,
+              width: 30,
+              height: 30,
             )
           : Image.asset(
               "assets/icon/ic_back_left.png",
               fit: BoxFit.cover,
-              width: 30.w,
-              height: 30.h,
+              width: 30,
+              height: 30,
             ),
     );
   }

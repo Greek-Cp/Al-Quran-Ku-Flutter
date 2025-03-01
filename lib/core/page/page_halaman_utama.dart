@@ -8,7 +8,6 @@ import 'package:alquran_ku/res/colors/list_color.dart';
 import 'package:alquran_ku/res/dimension/size.dart';
 import 'package:alquran_ku/res/style/decoration/decoration_container.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
@@ -55,8 +54,8 @@ class _PageHalamanUtamaState extends State<PageHalamanUtama> {
         SingleChildScrollView(
           child: SafeArea(
             child: Container(
-              margin: EdgeInsets.symmetric(
-                  horizontal: size.sizeSymetricMarginPage.w),
+              margin:
+                  EdgeInsets.symmetric(horizontal: size.sizeSymetricMarginPage),
               child: Column(
                 children: [
                   Row(
@@ -70,13 +69,13 @@ class _PageHalamanUtamaState extends State<PageHalamanUtama> {
                           children: [
                             ComponentTextDescription(
                               "Al-Quran",
-                              fontSize: size.sizeTextHeaderGlobal.sp,
+                              fontSize: size.sizeTextHeaderGlobal,
                               fontWeight: FontWeight.bold,
                               teksColor: ListColor.warnaTeksPutihGlobal,
                             ),
                             ComponentTextDescription(
                               "Baca Al-Quran Dengan Mudah",
-                              fontSize: size.sizeTextDescriptionGlobal.sp,
+                              fontSize: size.sizeTextDescriptionGlobal,
                               fontWeight: FontWeight.w500,
                               teksColor: ListColor.warnaTeksPutihGlobal,
                               maxLines: 2,
@@ -85,18 +84,18 @@ class _PageHalamanUtamaState extends State<PageHalamanUtama> {
                         ),
                       ),
                       Container(
-                        transform: Matrix4.translationValues(0, 20.h, 0),
+                        transform: Matrix4.translationValues(0, 20, 0),
                         child: SvgPicture.asset(
                           "assets/icon/ic_kaligrafi.svg",
                           fit: BoxFit.cover,
-                          width: 110.w,
-                          height: 80.h,
+                          width: 110,
+                          height: 80,
                         ),
                       ),
                     ],
                   ),
                   SizedBox(
-                    height: 30.h,
+                    height: 30,
                   ),
                   Row(
                     mainAxisSize: MainAxisSize.max,
@@ -105,29 +104,28 @@ class _PageHalamanUtamaState extends State<PageHalamanUtama> {
                     children: [
                       ComponentTextDescription(
                         "Terakhir Dibaca",
-                        fontSize: size.sizeTextDescriptionGlobal.sp,
+                        fontSize: size.sizeTextDescriptionGlobal,
                         fontWeight: FontWeight.bold,
                         teksColor: ListColor.warnaTeksPutihGlobal,
                       ),
                       SizedBox(
-                        width: 10.w,
+                        width: 10,
                       ),
                     ],
                   ),
                   SizedBox(
-                    height: 10.h,
+                    height: 10,
                   ),
                   Obx(() {
                     return Card(
                       elevation: 5,
-
                       child: controller.nomorSurah.value == ""
                           ? Container(
                               child: Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: ComponentTextDescription(
                                   "Harap Baca Surah Terlebih Dahulu",
-                                  fontSize: size.sizeTextDescriptionGlobal.sp,
+                                  fontSize: size.sizeTextDescriptionGlobal,
                                 ),
                               ),
                             )
@@ -146,7 +144,7 @@ class _PageHalamanUtamaState extends State<PageHalamanUtama> {
                                             child: ComponentTextDescription(
                                           controller.nomorSurah.value,
                                           fontSize:
-                                              size.sizeTextDescriptionGlobal.sp,
+                                              size.sizeTextDescriptionGlobal,
                                         )),
                                       ),
                                     ],
@@ -160,15 +158,15 @@ class _PageHalamanUtamaState extends State<PageHalamanUtama> {
                                         children: [
                                           ComponentTextDescription(
                                             controller.namaSuratLatin.value,
-                                            fontSize: size
-                                                .sizeTextDescriptionGlobal.sp,
+                                            fontSize:
+                                                size.sizeTextDescriptionGlobal,
                                             teksColor:
                                                 ListColor.warnaTeksHitamGlobal,
                                           ),
                                           ComponentTextDescription(
                                             controller.arti.value,
-                                            fontSize: size
-                                                .sizeTextDescriptionGlobal.sp,
+                                            fontSize:
+                                                size.sizeTextDescriptionGlobal,
                                             teksColor:
                                                 ListColor.warnaTeksGrayGlobal,
                                           ),
@@ -188,7 +186,7 @@ class _PageHalamanUtamaState extends State<PageHalamanUtama> {
                                         controller.namaArab.value,
                                         teksColor: Colors.white,
                                         fontSize:
-                                            size.sizeTextDescriptionGlobal.sp,
+                                            size.sizeTextDescriptionGlobal,
                                       ),
                                     ),
                                   )
@@ -196,7 +194,7 @@ class _PageHalamanUtamaState extends State<PageHalamanUtama> {
                     );
                   }),
                   SizedBox(
-                    height: 10.h,
+                    height: 10,
                   ),
                   Row(
                     mainAxisSize: MainAxisSize.max,
@@ -205,17 +203,17 @@ class _PageHalamanUtamaState extends State<PageHalamanUtama> {
                     children: [
                       ComponentTextDescription(
                         "Kategori",
-                        fontSize: size.sizeTextDescriptionGlobal.sp,
+                        fontSize: size.sizeTextDescriptionGlobal,
                         fontWeight: FontWeight.bold,
                         teksColor: ListColor.warnaTeksPutihGlobal,
                       ),
                       SizedBox(
-                        width: 10.w,
+                        width: 10,
                       ),
                     ],
                   ),
                   SizedBox(
-                    height: 10.h,
+                    height: 10,
                   ),
                   Container(
                     decoration: BoxDecoration(
@@ -227,7 +225,7 @@ class _PageHalamanUtamaState extends State<PageHalamanUtama> {
                     ]),
                   ),
                   SizedBox(
-                    height: 10.h,
+                    height: 10,
                   ),
                   if (selectedIndex == 0)
                     FutureBuilder<Juz>(
@@ -364,17 +362,17 @@ class _PageHalamanUtamaState extends State<PageHalamanUtama> {
                         children: [
                           ComponentTextDescription(
                             "${namaDoa}",
-                            fontSize: size.sizeTextDescriptionGlobal.sp,
+                            fontSize: size.sizeTextDescriptionGlobal,
                             fontWeight: FontWeight.normal,
                           ),
                           ComponentTextDescription(
                             "${doaArab}",
                             teksColor: ListColor.warnaTeksGrayGlobal,
-                            fontSize: size.sizeTextDescriptionGlobal.sp,
+                            fontSize: size.sizeTextDescriptionGlobal,
                           ),
                           ComponentTextDescription(
                             "${doaLatin}",
-                            fontSize: size.sizeTextDescriptionGlobal.sp,
+                            fontSize: size.sizeTextDescriptionGlobal,
                             teksColor: ListColor.warnaTeksHitamGlobal,
                             maxLines: 5,
                           ),
@@ -462,13 +460,13 @@ class _PageHalamanUtamaState extends State<PageHalamanUtama> {
                       children: [
                         ComponentTextDescription(
                           "${namaLatin}",
-                          fontSize: size.sizeTextDescriptionGlobal.sp,
+                          fontSize: size.sizeTextDescriptionGlobal,
                           fontWeight: FontWeight.normal,
                         ),
                         ComponentTextDescription(
                           "${tempatTurun} * ${jumlahAyat} AYAT",
                           teksColor: ListColor.warnaTeksGrayGlobal,
-                          fontSize: size.sizeTextDescriptionGlobal.sp,
+                          fontSize: size.sizeTextDescriptionGlobal,
                         ),
                       ],
                     ),
@@ -478,7 +476,7 @@ class _PageHalamanUtamaState extends State<PageHalamanUtama> {
                   ),
                   ComponentTextDescription(
                     "${namaJuz}",
-                    fontSize: size.sizeTextDescriptionGlobal.sp,
+                    fontSize: size.sizeTextDescriptionGlobal,
                     teksColor: ListColor.warnaTeksHitamGlobal,
                   ),
                   SizedBox(
@@ -511,7 +509,7 @@ class _PageHalamanUtamaState extends State<PageHalamanUtama> {
           child: ComponentTextDescription(
             "$title",
             fontWeight: FontWeight.w500,
-            fontSize: size.sizeTextDescriptionGlobal.sp,
+            fontSize: size.sizeTextDescriptionGlobal,
             teksColor: selectedIndex == index
                 ? ListColor.warnaTeksPutihGlobal
                 : ListColor.warnaTeksHitamGlobal,

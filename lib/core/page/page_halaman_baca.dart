@@ -5,7 +5,6 @@ import 'package:alquran_ku/model/model_surat_alfatihah.dart';
 import 'package:alquran_ku/res/dimension/size.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
 import '../../model/model_surat.dart';
@@ -55,7 +54,7 @@ class _PageHalamanBacaState extends State<PageHalamanBaca>
                   children: [
                     Container(
                       margin: EdgeInsets.symmetric(
-                          horizontal: size.sizeSymetricMarginPage.w),
+                          horizontal: size.sizeSymetricMarginPage),
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -71,13 +70,13 @@ class _PageHalamanBacaState extends State<PageHalamanBaca>
                             children: [
                               ComponentTextDescription(
                                 controller.namaSuratLatin.value,
-                                fontSize: size.sizeTextHeaderGlobal.sp,
+                                fontSize: size.sizeTextHeaderGlobal,
                                 fontWeight: FontWeight.bold,
                                 teksColor: Colors.white,
                               ),
                               ComponentTextDescription(
                                 controller.arti.value,
-                                fontSize: size.sizeTextDescriptionGlobal.sp,
+                                fontSize: size.sizeTextDescriptionGlobal,
                                 fontWeight: FontWeight.w500,
                                 teksColor: Colors.white,
                               ),
@@ -93,7 +92,7 @@ class _PageHalamanBacaState extends State<PageHalamanBaca>
                               child: ComponentTextDescription(
                                 controller.namaArab.value,
                                 teksColor: ListColor.warnaTeksPutihGlobal,
-                                fontSize: size.sizeTextDescriptionGlobal.sp,
+                                fontSize: size.sizeTextDescriptionGlobal,
                               ),
                             ),
                           )
@@ -102,10 +101,10 @@ class _PageHalamanBacaState extends State<PageHalamanBaca>
                     ),
                     Container(
                       margin: EdgeInsets.symmetric(
-                          horizontal: size.sizeSymetricMarginPage.w),
+                          horizontal: size.sizeSymetricMarginPage),
                       child: ComponentTextDescription(
                         "Qari Bacaan",
-                        fontSize: size.sizeTextDescriptionGlobal.sp,
+                        fontSize: size.sizeTextDescriptionGlobal,
                         fontWeight: FontWeight.bold,
                         teksColor: ListColor.warnaTeksPutihGlobal,
                       ),
@@ -128,22 +127,22 @@ class _PageHalamanBacaState extends State<PageHalamanBaca>
                           ),
                         )),
                     SizedBox(
-                      height: 30.h,
+                      height: 30,
                     ),
                     Center(
                       child: ComponentTextDescription(
                         " بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْم ",
-                        fontSize: size.sizeTextHeaderGlobal.sp,
+                        fontSize: size.sizeTextHeaderGlobal,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
                     Center(
                       child: Container(
                         margin: EdgeInsets.symmetric(
-                            horizontal: size.sizeSymetricMarginPage.w),
+                            horizontal: size.sizeSymetricMarginPage),
                         child: ComponentTextDescription(
                           "Dengan menyebut nama Allah Yang Maha Pengasih lagi Maha Penyayang",
-                          fontSize: size.sizeTextDescriptionGlobal.sp,
+                          fontSize: size.sizeTextDescriptionGlobal,
                           teksColor: ListColor.warnaTeksHitamGlobal,
                           maxLines: 2,
                           textAlign: TextAlign.center,
@@ -153,7 +152,7 @@ class _PageHalamanBacaState extends State<PageHalamanBaca>
                     if (controller.getPilihSurat == 1)
                       Container(
                         margin: EdgeInsets.symmetric(
-                            horizontal: size.sizeSymetricMarginPage.w),
+                            horizontal: size.sizeSymetricMarginPage),
                         child: FutureBuilder<DetailSuratAlFatihah>(
                           future: ControllerHalamanUtama
                               .fetchDataDetailSuratAlFatihah(noSurat: "1"),
@@ -228,7 +227,7 @@ class _PageHalamanBacaState extends State<PageHalamanBaca>
                     else
                       Container(
                         margin: EdgeInsets.symmetric(
-                            horizontal: size.sizeSymetricMarginPage.w),
+                            horizontal: size.sizeSymetricMarginPage),
                         child: FutureBuilder<DetailSurat>(
                           future: ControllerHalamanUtama.fetchDataDetailSurat(
                               noSurat: controller.getPilihSurat.toString()),
@@ -334,7 +333,7 @@ class _PageHalamanBacaState extends State<PageHalamanBaca>
                     backgroundColor: ListColor.warnaNonPrimary,
                     child: ComponentTextDescription(
                       "${int.parse(nomorAyat.toString()) + 1}",
-                      fontSize: size.sizeTextDescriptionGlobal.sp,
+                      fontSize: size.sizeTextDescriptionGlobal,
                     ),
                   ),
                   Expanded(child: Container()),
@@ -388,7 +387,7 @@ class _PageHalamanBacaState extends State<PageHalamanBaca>
               alignment: Alignment.centerRight,
               child: ComponentTextDescription(
                 "${ayat}",
-                fontSize: size.sizeTextDescriptionGlobal.sp,
+                fontSize: size.sizeTextDescriptionGlobal,
                 fontWeight: FontWeight.bold,
               )),
         ),
@@ -398,7 +397,7 @@ class _PageHalamanBacaState extends State<PageHalamanBaca>
               alignment: Alignment.topLeft,
               child: ComponentTextDescription(
                 "${latin}",
-                fontSize: size.sizeTextDescriptionGlobal.sp,
+                fontSize: size.sizeTextDescriptionGlobal,
                 maxLines: 4,
               ),
             )),
@@ -409,7 +408,7 @@ class _PageHalamanBacaState extends State<PageHalamanBaca>
                 alignment: Alignment.topLeft,
                 child: ComponentTextDescription(
                   "${arti}",
-                  fontSize: size.sizeTextDescriptionGlobal.sp,
+                  fontSize: size.sizeTextDescriptionGlobal,
                   maxLines: 4,
                   teksColor: ListColor.warnaTeksGrayGlobal,
                 )),
@@ -422,8 +421,8 @@ class _PageHalamanBacaState extends State<PageHalamanBaca>
   Widget buildItem(
       int index, String namaQori, String gambarQori, String idQori) {
     double width = selectedIndex == index
-        ? 90.w
-        : 70.w; // Mengubah lebar berdasarkan apakah item terpilih
+        ? 90
+        : 70; // Mengubah lebar berdasarkan apakah item terpilih
     return GestureDetector(
       onTap: () {
         setState(() {
@@ -462,7 +461,7 @@ class _PageHalamanBacaState extends State<PageHalamanBaca>
             ComponentTextDescription(
               "$namaQori",
               fontWeight: FontWeight.w500,
-              fontSize: size.sizeTextDescriptionGlobal - 4.sp,
+              fontSize: size.sizeTextDescriptionGlobal - 4,
               teksColor: selectedIndex == index
                   ? ListColor.selectedColor
                   : ListColor.warnaTeksHitamGlobal,
