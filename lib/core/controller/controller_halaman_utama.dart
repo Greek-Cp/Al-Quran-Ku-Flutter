@@ -1,4 +1,6 @@
 import 'dart:convert';
+import 'package:alquran_ku/core/page/page_halaman_baca.dart';
+import 'package:alquran_ku/core/page/page_halaman_utama.dart';
 import 'package:alquran_ku/model/model_surat_alfatihah.dart';
 import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
@@ -6,13 +8,13 @@ import 'package:http/http.dart' as http;
 import '../../model/model_doa.dart';
 import '../../model/model_juz.dart';
 import '../../model/model_surat.dart';
-import '../../services/api/api.dart';
 // Import your model classes like Juz, DetailSurat, Doa, API as well
 
+// Placeholder for ControllerHalamanUtama for backward compatibility
 class ControllerHalamanUtama extends GetxController {
   var selectionSurat = 0.obs;
   var namaSuratDiPilih = "".obs;
-  var listJuz = Juz().obs; // or any default value you want
+  var listJuz = Juz().obs;
   var idSuratDipilih = "".obs;
   var arti = "".obs;
   var descBawah = "".obs;

@@ -25,6 +25,10 @@ class MainApp extends StatelessWidget {
             page: () => PageHalamanSplashScreen(),
             transition: Transition.fadeIn),
         GetPage(
+            name: PageIntroduction.routeName.toString(),
+            page: () => PageIntroduction(),
+            transition: Transition.fadeIn),
+        GetPage(
             name: PageHalamanUtama.routeName.toString(),
             page: () => PageHalamanUtama(),
             transition: Transition.leftToRight),
