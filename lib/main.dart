@@ -7,6 +7,8 @@ import 'package:alquran_ku/httpovveride.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'core/page/page_halaman_intro.dart';
+
 void main() {
   HttpOverrides.global = MyHttpOverrides();
   runApp(const MainApp());
@@ -18,6 +20,9 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      debugShowMaterialGrid: false,
+      debugShowCheckedModeBanner: false,
+      showSemanticsDebugger: false,
       initialRoute: PageHalamanSplashScreen.routeName,
       getPages: [
         GetPage(
