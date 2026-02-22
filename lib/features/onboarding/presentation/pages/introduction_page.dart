@@ -65,7 +65,7 @@ class _IntroductionPageState extends State<IntroductionPage> {
               Align(
                 alignment: Alignment.topRight,
                 child: TextButton(
-                  onPressed: () => Get.offAllNamed('/HomePage'),
+                  onPressed: () => Get.offAllNamed('/MainPage'),
                   child: Text(
                     'Lewati',
                     style: GoogleFonts.poppins(
@@ -116,7 +116,7 @@ class _IntroductionPageState extends State<IntroductionPage> {
                     GestureDetector(
                       onTap: () {
                         if (_currentPage == _introPages.length - 1) {
-                          Get.offAllNamed('/HomePage');
+                          Get.offAllNamed('/MainPage');
                         } else {
                           _pageController.nextPage(
                             duration: const Duration(milliseconds: 300),
